@@ -1,0 +1,1094 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="VfL-Ha-5Ef">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="UDe-y8-TVF">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="VfL-Ha-5Ef" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="8NY-E3-fqI">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="viewControllers" id="R6K-r8-DZR"/>
+                        <segue destination="DLx-ev-TcD" kind="relationship" relationship="viewControllers" id="aSB-bI-3iO"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iKM-YH-czg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-945" y="-116"/>
+        </scene>
+        <!--Playing Card Game View Controller - Playing Cards-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="PlayingCardGameViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QIL-56-oSI">
+                                <rect key="frame" x="20" y="20" width="64" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="tX3-Gm-Nzb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Qxi-jf-cSc">
+                                <rect key="frame" x="92" y="20" width="64" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A♣"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="OE6-U5-8Hg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="t69-2l-BKN">
+                                <rect key="frame" x="164" y="20" width="64" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A♣"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="znu-MR-cH3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jPX-fE-pdo">
+                                <rect key="frame" x="236" y="20" width="64" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A♣"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="Ktz-Gp-l1b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Asl-Pg-h6h">
+                                <rect key="frame" x="20" y="95" width="64" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A♣"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="QpW-Qq-7Pr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xce-db-j92">
+                                <rect key="frame" x="92" y="95" width="64" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A♣"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="b7D-Vu-px2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="523-wn-oyM">
+                                <rect key="frame" x="164" y="95" width="64" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A♣"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="JV8-KD-yJ3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="un9-S3-09I">
+                                <rect key="frame" x="236" y="95" width="64" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A♣"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="UU2-QA-Pzt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lye-c5-gA2">
+                                <rect key="frame" x="20" y="170" width="64" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A♣"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="ljq-cO-2Zd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9T4-r7-cQb">
+                                <rect key="frame" x="92" y="170" width="64" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A♣"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="rqh-QL-h94"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XD7-Mg-xwO">
+                                <rect key="frame" x="164" y="170" width="64" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A♣"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="0Da-AY-hZN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AEA-oC-JIV">
+                                <rect key="frame" x="236" y="170" width="64" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A♣"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="vgf-tF-R4C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Yoh-BM-flD">
+                                <rect key="frame" x="20" y="245" width="64" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A♣"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="HdR-1E-e1X"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HLO-aM-YFV">
+                                <rect key="frame" x="92" y="245" width="64" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A♣"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="7zJ-gA-WYK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="92H-fW-4Hl">
+                                <rect key="frame" x="164" y="245" width="64" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A♣"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="1Q4-Yp-Ejz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="90t-e7-sht">
+                                <rect key="frame" x="236" y="245" width="64" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="A♣"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="2" eventType="touchUpInside" id="Q02-V1-N0Y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Flips: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tTa-Kl-bv8">
+                                <rect key="frame" x="20" y="380" width="92" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Score: 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Msr-b5-G5q">
+                                <rect key="frame" x="183" y="380" width="117" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Matched J♥ and J♦ for 4 points" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsLetterSpacingToFitWidth="YES" id="cC3-Ub-a4u">
+                                <rect key="frame" x="20" y="320" width="208" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QL2-kB-HcK">
+                                <rect key="frame" x="236" y="320" width="64" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Deal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deal:" destination="2" eventType="touchUpInside" id="7fZ-bE-7Dl"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="0.0" id="u0o-JH-vJ1">
+                                <rect key="frame" x="18" y="350" width="140" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="historySliderValueChanged:" destination="2" eventType="valueChanged" id="gh5-4R-BV6"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="0.013179991267322026" green="0.50787618885869568" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Playing Cards" id="rYf-uh-RbH"/>
+                    <connections>
+                        <outlet property="flipsLabel" destination="tTa-Kl-bv8" id="6ka-RJ-VTI"/>
+                        <outlet property="historySlider" destination="u0o-JH-vJ1" id="4gb-O1-fsr"/>
+                        <outlet property="resultsOfLastFlipLabel" destination="cC3-Ub-a4u" id="zAt-pH-tu1"/>
+                        <outlet property="scoreLabel" destination="Msr-b5-G5q" id="dcu-SD-HI3"/>
+                        <outletCollection property="cardButtons" destination="QIL-56-oSI" id="AYg-Vc-ZBS"/>
+                        <outletCollection property="cardButtons" destination="Qxi-jf-cSc" id="03w-sN-Mxc"/>
+                        <outletCollection property="cardButtons" destination="t69-2l-BKN" id="R6H-XG-EYy"/>
+                        <outletCollection property="cardButtons" destination="jPX-fE-pdo" id="pg1-xG-TRJ"/>
+                        <outletCollection property="cardButtons" destination="Asl-Pg-h6h" id="aZR-MU-Nxt"/>
+                        <outletCollection property="cardButtons" destination="xce-db-j92" id="K8n-6b-L3x"/>
+                        <outletCollection property="cardButtons" destination="523-wn-oyM" id="DSm-ES-Vdk"/>
+                        <outletCollection property="cardButtons" destination="un9-S3-09I" id="TAR-Q1-8eC"/>
+                        <outletCollection property="cardButtons" destination="lye-c5-gA2" id="nTo-0v-naz"/>
+                        <outletCollection property="cardButtons" destination="9T4-r7-cQb" id="dP0-7A-k9z"/>
+                        <outletCollection property="cardButtons" destination="XD7-Mg-xwO" id="ylK-X0-exL"/>
+                        <outletCollection property="cardButtons" destination="AEA-oC-JIV" id="RbI-2D-tfx"/>
+                        <outletCollection property="cardButtons" destination="Yoh-BM-flD" id="yNI-Vr-Uyy"/>
+                        <outletCollection property="cardButtons" destination="HLO-aM-YFV" id="nfl-Gj-ueG"/>
+                        <outletCollection property="cardButtons" destination="92H-fW-4Hl" id="R9P-hR-Oi1"/>
+                        <outletCollection property="cardButtons" destination="90t-e7-sht" id="fzw-lR-xBR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-408" y="-420"/>
+        </scene>
+        <!--Set Game View Controller - 3-card Set-->
+        <scene sceneID="Wk0-M6-yXf">
+            <objects>
+                <viewController id="DLx-ev-TcD" customClass="SetGameViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9JG-5b-hHC">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Flips: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="H7n-ZX-ULY">
+                                <rect key="frame" x="20" y="382" width="92" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Score: 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1bl-Fx-uVL">
+                                <rect key="frame" x="231" y="382" width="69" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" id="4K2-Af-Tpi">
+                                <rect key="frame" x="20" y="321" width="280" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Matched cards for 4 points">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="12" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="saN-ti-GE7">
+                                <rect key="frame" x="164" y="359" width="64" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Deal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deal:" destination="DLx-ev-TcD" eventType="touchUpInside" id="20Y-1k-WRI"/>
+                                    <action selector="deal:" destination="2" eventType="touchUpInside" id="qwy-WB-T4B"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="0.0" id="lKu-c0-Xow">
+                                <rect key="frame" x="18" y="359" width="140" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="historySliderValueChanged:" destination="DLx-ev-TcD" eventType="valueChanged" id="Qvb-AO-MX5"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="L8n-4J-Vyx">
+                                <rect key="frame" x="20" y="20" width="62" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="▲●■">
+                                            <attributes>
+                                                <color key="NSColor" red="0.45490196078431372" green="0.027450980392156862" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name="Menlo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="17" headIndent="36" defaultTabInterval="36">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="11"/>
+                                                        <textTab alignment="natural" location="36"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="DLx-ev-TcD" eventType="touchUpInside" id="aZa-SP-d7k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="b4i-LT-bin">
+                                <rect key="frame" x="94" y="20" width="62" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="▲●■">
+                                            <attributes>
+                                                <color key="NSColor" red="0.45490196078431372" green="0.027450980392156862" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name="Menlo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="17" headIndent="36" defaultTabInterval="36">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="11"/>
+                                                        <textTab alignment="natural" location="36"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="DLx-ev-TcD" eventType="touchUpInside" id="Nof-JT-SSj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="CCI-ol-gu9">
+                                <rect key="frame" x="166" y="20" width="62" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="▲●■">
+                                            <attributes>
+                                                <color key="NSColor" red="0.45490196078431372" green="0.027450980392156862" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name="Menlo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="17" headIndent="36" defaultTabInterval="36">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="11"/>
+                                                        <textTab alignment="natural" location="36"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="DLx-ev-TcD" eventType="touchUpInside" id="S07-j9-oNn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="JoS-tJ-Pvn">
+                                <rect key="frame" x="238" y="20" width="62" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="▲●■">
+                                            <attributes>
+                                                <color key="NSColor" red="0.45490196078431372" green="0.027450980392156862" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name="Menlo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="17" headIndent="36" defaultTabInterval="36">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="11"/>
+                                                        <textTab alignment="natural" location="36"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="DLx-ev-TcD" eventType="touchUpInside" id="Cdy-sv-Dq6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="7W6-XM-Jxs">
+                                <rect key="frame" x="20" y="71" width="62" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="▲●■">
+                                            <attributes>
+                                                <color key="NSColor" red="0.45490196078431372" green="0.027450980392156862" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name="Menlo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="17" headIndent="36" defaultTabInterval="36">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="11"/>
+                                                        <textTab alignment="natural" location="36"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="DLx-ev-TcD" eventType="touchUpInside" id="87X-q4-cOq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="Huf-oa-H3E">
+                                <rect key="frame" x="94" y="71" width="62" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="▲●■">
+                                            <attributes>
+                                                <color key="NSColor" red="0.45490196078431372" green="0.027450980392156862" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name="Menlo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="17" headIndent="36" defaultTabInterval="36">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="11"/>
+                                                        <textTab alignment="natural" location="36"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="DLx-ev-TcD" eventType="touchUpInside" id="wwN-BP-vAP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="gRb-sW-6FN">
+                                <rect key="frame" x="166" y="71" width="62" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="▲●■">
+                                            <attributes>
+                                                <color key="NSColor" red="0.45490196078431372" green="0.027450980392156862" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name="Menlo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="17" headIndent="36" defaultTabInterval="36">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="11"/>
+                                                        <textTab alignment="natural" location="36"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="DLx-ev-TcD" eventType="touchUpInside" id="eJD-cz-H6x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="fot-bl-h2U">
+                                <rect key="frame" x="238" y="71" width="62" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="▲●■">
+                                            <attributes>
+                                                <color key="NSColor" red="0.45490196078431372" green="0.027450980392156862" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name="Menlo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="17" headIndent="36" defaultTabInterval="36">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="11"/>
+                                                        <textTab alignment="natural" location="36"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="DLx-ev-TcD" eventType="touchUpInside" id="o6f-GM-nfr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="R3u-Mj-Y3t">
+                                <rect key="frame" x="20" y="121" width="62" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="▲●■">
+                                            <attributes>
+                                                <color key="NSColor" red="0.45490196078431372" green="0.027450980392156862" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name="Menlo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="17" headIndent="36" defaultTabInterval="36">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="11"/>
+                                                        <textTab alignment="natural" location="36"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="DLx-ev-TcD" eventType="touchUpInside" id="JqQ-ij-yj8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="kBG-gS-ClG">
+                                <rect key="frame" x="94" y="121" width="62" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="▲●■">
+                                            <attributes>
+                                                <color key="NSColor" red="0.45490196078431372" green="0.027450980392156862" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name="Menlo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="17" headIndent="36" defaultTabInterval="36">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="11"/>
+                                                        <textTab alignment="natural" location="36"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="DLx-ev-TcD" eventType="touchUpInside" id="OJi-gK-Gtt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="SA9-T6-rzJ">
+                                <rect key="frame" x="166" y="121" width="62" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="▲●■">
+                                            <attributes>
+                                                <color key="NSColor" red="0.45490196078431372" green="0.027450980392156862" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name="Menlo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="17" headIndent="36" defaultTabInterval="36">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="11"/>
+                                                        <textTab alignment="natural" location="36"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="DLx-ev-TcD" eventType="touchUpInside" id="HYD-t6-4BL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="tJf-pE-42J">
+                                <rect key="frame" x="238" y="121" width="62" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="▲●■">
+                                            <attributes>
+                                                <color key="NSColor" red="0.45490196078431372" green="0.027450980392156862" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name="Menlo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="17" headIndent="36" defaultTabInterval="36">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="11"/>
+                                                        <textTab alignment="natural" location="36"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="DLx-ev-TcD" eventType="touchUpInside" id="YIL-QT-rac"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="0aH-7d-RTr">
+                                <rect key="frame" x="20" y="171" width="62" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="▲●■">
+                                            <attributes>
+                                                <color key="NSColor" red="0.45490196078431372" green="0.027450980392156862" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name="Menlo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="17" headIndent="36" defaultTabInterval="36">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="11"/>
+                                                        <textTab alignment="natural" location="36"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="DLx-ev-TcD" eventType="touchUpInside" id="FFI-PK-KFB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="rUl-aV-A9S">
+                                <rect key="frame" x="94" y="171" width="62" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="▲●■">
+                                            <attributes>
+                                                <color key="NSColor" red="0.45490196078431372" green="0.027450980392156862" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name="Menlo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="17" headIndent="36" defaultTabInterval="36">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="11"/>
+                                                        <textTab alignment="natural" location="36"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="DLx-ev-TcD" eventType="touchUpInside" id="DaF-CE-rWI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="LcQ-nb-JqF">
+                                <rect key="frame" x="166" y="171" width="62" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="▲●■">
+                                            <attributes>
+                                                <color key="NSColor" red="0.45490196078431372" green="0.027450980392156862" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name="Menlo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="17" headIndent="36" defaultTabInterval="36">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="11"/>
+                                                        <textTab alignment="natural" location="36"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="DLx-ev-TcD" eventType="touchUpInside" id="rqM-WH-1qH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="bC6-Oz-4Bi">
+                                <rect key="frame" x="238" y="171" width="62" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="▲●■">
+                                            <attributes>
+                                                <color key="NSColor" red="0.45490196078431372" green="0.027450980392156862" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name="Menlo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="17" headIndent="36" defaultTabInterval="36">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="11"/>
+                                                        <textTab alignment="natural" location="36"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="DLx-ev-TcD" eventType="touchUpInside" id="JBD-48-7wg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="yP1-gL-VFN">
+                                <rect key="frame" x="20" y="221" width="62" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="▲●■">
+                                            <attributes>
+                                                <color key="NSColor" red="0.45490196078431372" green="0.027450980392156862" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name="Menlo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="17" headIndent="36" defaultTabInterval="36">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="11"/>
+                                                        <textTab alignment="natural" location="36"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="DLx-ev-TcD" eventType="touchUpInside" id="bLG-lv-YWo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="K7C-pg-okH">
+                                <rect key="frame" x="94" y="221" width="62" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="▲●■">
+                                            <attributes>
+                                                <color key="NSColor" red="0.45490196078431372" green="0.027450980392156862" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name="Menlo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="17" headIndent="36" defaultTabInterval="36">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="11"/>
+                                                        <textTab alignment="natural" location="36"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="DLx-ev-TcD" eventType="touchUpInside" id="41N-ED-qRY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="WK2-tW-3YI">
+                                <rect key="frame" x="166" y="221" width="62" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="▲●■">
+                                            <attributes>
+                                                <color key="NSColor" red="0.45490196078431372" green="0.027450980392156862" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name="Menlo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="17" headIndent="36" defaultTabInterval="36">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="11"/>
+                                                        <textTab alignment="natural" location="36"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="DLx-ev-TcD" eventType="touchUpInside" id="drb-gq-N7K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="JjY-m1-6BP">
+                                <rect key="frame" x="238" y="221" width="62" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="▲●■">
+                                            <attributes>
+                                                <color key="NSColor" red="0.45490196078431372" green="0.027450980392156862" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name="Menlo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="17" headIndent="36" defaultTabInterval="36">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="11"/>
+                                                        <textTab alignment="natural" location="36"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="DLx-ev-TcD" eventType="touchUpInside" id="x3V-yP-DEI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="RGe-zi-M7J">
+                                <rect key="frame" x="20" y="271" width="62" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="▲●■">
+                                            <attributes>
+                                                <color key="NSColor" red="0.45490196078431372" green="0.027450980392156862" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name="Menlo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="17" headIndent="36" defaultTabInterval="36">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="11"/>
+                                                        <textTab alignment="natural" location="36"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="DLx-ev-TcD" eventType="touchUpInside" id="t2Q-dh-OMq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="nSF-qR-iZ0">
+                                <rect key="frame" x="94" y="271" width="62" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="▲●■">
+                                            <attributes>
+                                                <color key="NSColor" red="0.45490196078431372" green="0.027450980392156862" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name="Menlo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="17" headIndent="36" defaultTabInterval="36">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="11"/>
+                                                        <textTab alignment="natural" location="36"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="DLx-ev-TcD" eventType="touchUpInside" id="jbJ-1k-c23"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="OgV-Wu-ycg">
+                                <rect key="frame" x="166" y="271" width="62" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="▲●■">
+                                            <attributes>
+                                                <color key="NSColor" red="0.45490196078431372" green="0.027450980392156862" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name="Menlo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="17" headIndent="36" defaultTabInterval="36">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="11"/>
+                                                        <textTab alignment="natural" location="36"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="DLx-ev-TcD" eventType="touchUpInside" id="StD-aV-UCy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="lhi-RS-eh8">
+                                <rect key="frame" x="238" y="271" width="62" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="▲●■">
+                                            <attributes>
+                                                <color key="NSColor" red="0.45490196078431372" green="0.027450980392156862" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name="Menlo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="17" headIndent="36" defaultTabInterval="36">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="11"/>
+                                                        <textTab alignment="natural" location="36"/>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="DLx-ev-TcD" eventType="touchUpInside" id="XNr-iS-EgY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.70196080207824707" green="0.70196080207824707" blue="0.70196080207824707" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="3-card Set" id="iYY-Ua-KXR"/>
+                    <connections>
+                        <outlet property="flipsLabel" destination="H7n-ZX-ULY" id="hnx-l5-AEt"/>
+                        <outlet property="historySlider" destination="lKu-c0-Xow" id="RZm-EJ-i9s"/>
+                        <outlet property="resultsOfLastFlipLabel" destination="4K2-Af-Tpi" id="fZU-PC-1Ng"/>
+                        <outlet property="scoreLabel" destination="1bl-Fx-uVL" id="hne-QT-ruZ"/>
+                        <outletCollection property="cardButtons" destination="RGe-zi-M7J" id="qcG-WJ-z45"/>
+                        <outletCollection property="cardButtons" destination="nSF-qR-iZ0" id="jIq-9z-jKP"/>
+                        <outletCollection property="cardButtons" destination="OgV-Wu-ycg" id="rNf-iu-N50"/>
+                        <outletCollection property="cardButtons" destination="lhi-RS-eh8" id="oIL-E7-ySP"/>
+                        <outletCollection property="cardButtons" destination="JjY-m1-6BP" id="MQb-nQ-68n"/>
+                        <outletCollection property="cardButtons" destination="WK2-tW-3YI" id="mHf-xX-Bd9"/>
+                        <outletCollection property="cardButtons" destination="K7C-pg-okH" id="sNn-ZI-v7b"/>
+                        <outletCollection property="cardButtons" destination="yP1-gL-VFN" id="FyY-2Y-quE"/>
+                        <outletCollection property="cardButtons" destination="0aH-7d-RTr" id="oV5-Fh-B5m"/>
+                        <outletCollection property="cardButtons" destination="rUl-aV-A9S" id="FNg-jk-guV"/>
+                        <outletCollection property="cardButtons" destination="LcQ-nb-JqF" id="pF2-dS-bAT"/>
+                        <outletCollection property="cardButtons" destination="bC6-Oz-4Bi" id="Ajf-xn-OKI"/>
+                        <outletCollection property="cardButtons" destination="tJf-pE-42J" id="Oaf-hL-i35"/>
+                        <outletCollection property="cardButtons" destination="SA9-T6-rzJ" id="Mmf-nY-rIM"/>
+                        <outletCollection property="cardButtons" destination="kBG-gS-ClG" id="pWA-wl-ASp"/>
+                        <outletCollection property="cardButtons" destination="R3u-Mj-Y3t" id="sDY-3D-NvR"/>
+                        <outletCollection property="cardButtons" destination="fot-bl-h2U" id="dT6-5g-DDb"/>
+                        <outletCollection property="cardButtons" destination="gRb-sW-6FN" id="Qhh-Yr-Ekt"/>
+                        <outletCollection property="cardButtons" destination="Huf-oa-H3E" id="t40-gd-mhY"/>
+                        <outletCollection property="cardButtons" destination="7W6-XM-Jxs" id="0Bo-Yz-YpA"/>
+                        <outletCollection property="cardButtons" destination="L8n-4J-Vyx" id="BTZ-ek-AbS"/>
+                        <outletCollection property="cardButtons" destination="b4i-LT-bin" id="Md6-Oa-CwG"/>
+                        <outletCollection property="cardButtons" destination="CCI-ol-gu9" id="cRt-1S-ONs"/>
+                        <outletCollection property="cardButtons" destination="JoS-tJ-Pvn" id="j8Q-id-yiW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pNs-d5-oLL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-469" y="145"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="CardGameViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CardGameViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="deal:"/>
+                <relationship kind="action" name="flipCard:" candidateClass="UIButton"/>
+                <relationship kind="action" name="historySliderValueChanged:" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="flipsLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="historySlider" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="resultsOfLastFlipLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>
+                <relationship kind="outletCollection" name="cardButtons" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="PlayingCardGameViewController" superclassName="CardGameViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PlayingCardGameViewController.h"/>
+            <relationships>
+                <relationship kind="outletCollection" name="cardButtons" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="SetGameViewController" superclassName="CardGameViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SetGameViewController.h"/>
+            <relationships>
+                <relationship kind="outletCollection" name="cardButtons" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
