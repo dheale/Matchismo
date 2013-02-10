@@ -26,41 +26,13 @@
 - (IBAction)deal:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UISlider *historySlider;
-//@property (weak, nonatomic) IBOutlet UISegmentedControl *gameModeSelector;
 @end
 
 
 @implementation CardGameViewController
 
-//-(CardMatchingGame *)game
-//{
-//    if (!_game)
-//{   _game = [[CardMatchingGame alloc] initWithCardCount:[self.cardButtons count]
-//                                                  usingDeck:[self deckToUse]
-//                                             matchingNCards:[self matchNCards]];
-//
-//    }
-//    return _game;//
-//}
-
 -(void) updateUI
 {
-    //    static UIImage* cardBackImage;
-    //    cardBackImage=[UIImage imageNamed:@"cardBackRed.png"];
-    
-    //for (UIButton *cardButton in self.cardButtons)
-    //   {
-    //        Card *card = [self.game cardAtIndex:[self.cardButtons indexOfObject:cardButton]];
-    //        [cardButton setTitle:card.contents forState:UIControlStateSelected];
-    //        [cardButton setTitle:card.contents forState:UIControlStateSelected|UIControlStateDisabled];
-    
-    //        [cardButton setImage:(card.isFaceUp ? nil : cardBackImage) forState:UIControlStateNormal];
-    
-    //        cardButton.selected = card.isFaceUp;
-    //        cardButton.enabled = !card.isUnplayable;
-    //        cardButton.alpha = card.isUnplayable ? 0.3 : 1.0;
-    
-    //    }
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
     
     self.historySlider.maximumValue = [self.game.moveHistory count]-1;
@@ -77,10 +49,6 @@
             int intValue = roundl(self.historySlider.value);
 
             [self updateResultOfLastFlipLabel:self.game.moveHistory[intValue]];
-//            
-//            self.resultsOfLastFlipLabel.text =            
-//            [self.game.moveHistory[intValue] descriptionOfMove];
-//            
             self.resultsOfLastFlipLabel.alpha = 0.3;
         }
     }
